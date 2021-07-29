@@ -96,7 +96,7 @@ func copyMap() map[string]string{
 func postToDisc(content string){
 
   method := "POST"
-  base_url := "https://discord.com/api/webhooks/829210469263867905/Z8CbkSICyrnVenL8sMFWoc9KToXQC_F_cy6LwvY4r0I1D80hHXnGlStfSrPsqSBLtLHF"
+  base_url := ""
   body := strings.NewReader("content="+content)
   req,_ := http.NewRequest(method, base_url, body)
   req.Header.Add("Content-Type", "application/x-www-form-urlencoded")
